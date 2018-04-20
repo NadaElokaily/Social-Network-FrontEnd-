@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign In Page</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- If IE use the latest rendering engine -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <style>
+    .icon{
+    height :30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  	}
+    .grid3{
+
+      width: 25%;
+      display: inline-block;
+      font-size: 16px;
+    }
+    .clearfix::after, .clearfix::before {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    .lbls{
+      display: block;
+      font-size: 100px;
+    }
+    .Titles{
+	    color: rgba(255, 255, 255, 1);
+	    font-size: 30px;
+	    text-align: center;
+	    font-weight: bold;
+	    display: block;
+    }    
+    .Bxs{
+	    font-size: 20px;
+	    text-align: center;
+	    font-weight: bold;
+	    display: block;
+    }
+    .backGround{
+      background-image: url("Milky-way.jpg");
+      background-size: cover;
+    }
+    .MainContainer{
+      background-color: rgba(34, 34, 34, 0.7);
+      width: 40%;
+      margin: auto;
+    }
+    </style>
+  </head>
+  <body class="backGround" >
+    <nav class="navbar navbar-inverse ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img class="icon" src="White_Globe_Icon.png" />
+          <a  class="navbar-brand" href="Home.html">Anti-Social Freaks</a>
+        </div>
+            <ul class="nav navbar-nav navbar-right">
+              <form class="navbar-form navbar-left" action="/action_page.php">
+               <div class="input-group">
+                 <input type="text" class="form-control" placeholder="Search">
+                 <div class="input-group-btn">
+                   <button class="btn btn-default" type="submit">
+                     <i class="glyphicon glyphicon-search"></i>
+                   </button>
+                 </div>
+               </div>
+             </form>
+
+              <li > <a href="Home.html">Home</a></li>
+              <li><a href="TimeLine.html">Timeline</a></li>
+              <!-- <li><a href="MyProfile.html">My Profile</a></li> -->
+              <li class="active"><a href="SignIn.html">Sign In</a></li>
+              <li><a href="SignUp.html">Sign Up</a></li>
+              <!-- <li><a href="SignOut.html">Sign Out</a></li> -->
+
+
+
+            </ul>
+      </div>
+    </nav>
+    <main class="MainContainer">
+      <div class="Titles" style="margin-top: 10%; padding-top: 20px;">
+        <label>Email</label>        
+      </div>
+      <div class="Bxs">
+        <input type="text" placeholder="Please Enter Your Email Address..." size="50px" />
+      </div>
+      
+
+      <div class="Titles">
+        <label>Password</label>
+      </div>
+      <div class="Bxs">
+        <input type="password" placeholder="Please Enter Your Password..." size="50px" />
+      </div>
+      <div class="Bxs" style="margin-top: 10px; padding-bottom: 20px;">
+        <button>Sign In</button>
+        <button>Cancel</button>
+      </div>
+      
+    </main>
+  </body>
+</html>
